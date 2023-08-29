@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sngle Page Grid Component</title>
+
+  <!-- style using css -->
+  <style>
+    @media screen and (min-width:576px) {
+      .card {
+        position: relative;
+        margin: auto;
+        top: 80px;
+        width: 50%;
+      }
+
+      footer {
+        display: flex;
+        columns: 2;
+        color: white;
+
+      }
+
+      .Subscription,
+      .why-us {
+        display: block;
+        width: 50%;
+        padding: 10px 0;
+      }
+
+      .why-us {
+        background-color: #4abebd;
+        border-bottom-right-radius: 10px;
+
+      }
+
+      .Subscription {
+        border-bottom-left-radius: 10px;
+      }
+    }
+
+    @media screen and (max-width:575px) {
+      .card {
+        position: relative;
+        top: .0;
+        left: 0;
+        width: 90%;
+        margin: auto;
+      }
+
+      footer {
+        display: block;
+        color: white;
+      }
+
+      .why-us {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    body {
+      background-color: #e6eff6;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 100;
+      box-sizing: border-box;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #ffffff;
+      box-shadow: 0 0 15px 15px rgb(206, 203, 203);
+      border-radius: 10px;
+    }
+
+    .join {
+      /* margin: 20px 0; */
+      padding: 20px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    header {
+      display: block;
+    }
+
+    header p {
+      color: gray;
+    }
+
+    strong {
+      font-size: 40px;
+
+    }
+
+    h2 {
+      margin: 0;
+      color: #38b3b1;
+    }
+
+    h4 {
+      color: #c6dd4e;
+    }
+
+
+    .heading {
+      color: white;
+      margin: 0;
+      padding-bottom: 20px;
+    }
+
+    .Subscription {
+      background-color: #25b6b1;
+      padding: 20px;
+    }
+
+    .Subscription p {
+      padding-bottom: 20px;
+    }
+
+    .price {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+
+    button {
+      background-color: #bfdf32;
+      display: block;
+      margin: auto;
+      font-size: x-large;
+      color: white;
+      border: none;
+      padding: 10px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 70%;
+    }
+
+    .why-us {
+      padding: 20px;
+      background-color: #4abebd;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="card">
+    <header class="join">
+      <h2>Join our community</h2>
+      <h4>30 days, hassle-free money back garentee</h4>
+      <p>Gain access to our full library of tutorials along with expert code reviews. </p>
+      <p>Perfect for any developers who are serious about honing their skills.</p>
+    </header>
+    <footer>
+      <div class="Subscription">
+        <h4 class="heading">Monthly Subscription </h5>
+          <p class="price"><strong>$29</strong> &nbsp; per month</p>
+          <p>Full access for less than $1 a day</p>
+          <button type="button">
+            Sign up
+          </button>
+      </div>
+      <div class="why-us">
+        <h4 class="heading">Why us</h4>
+        <p>Tutorials by industry experts</p>
+        <p> Peer & expert code review </p>
+        <p> Coding exercises </p>
+        <p>Acess to our GitHub repos </p>
+        <p>Community forum </p>
+        <p>Flashcard decks </p>
+        <p>New videos every week
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
